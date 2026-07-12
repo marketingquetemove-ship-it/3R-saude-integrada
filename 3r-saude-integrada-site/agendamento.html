@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Agendamento Online | 3R Saúde Integrada - Salvador BA</title>
+    <meta name="description" content="Agende sua consulta odontológica online na 3R Saúde Integrada. Escolha data, horário e procedimento. Sistema rápido e prático!">
+    <meta name="keywords" content="agendamento dentista, marcar consulta dentista salvador, agendar odontológica">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.3rsaudeintegrada.com.br/agendamento.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.3rsaudeintegrada.com.br/agendamento.html">
+    <meta property="og:title" content="Agendamento Online | 3R Saúde Integrada">
+    <meta property="og:description" content="Agende sua consulta online de forma rápida e prática.">
+    <meta property="og:image" content="https://www.3rsaudeintegrada.com.br/images/og-image.jpg">
+
+    <meta name="theme-color" content="#0B2D5C">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Agendamento Online - 3R Saúde Integrada",
+        "url": "https://www.3rsaudeintegrada.com.br/agendamento.html"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo"><span class="gold-text">3R</span></div>
+            <div class="preloader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="preloader-text">Carregando sua experiência...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-tooth"></i></div>
+                <div class="logo-text">
+                    <span class="logo-name">3R <span class="gold-text">Saúde Integrada</span></span>
+                    <span class="logo-tagline">Odontologia Premium</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="especialidades.html" class="nav-link">Especialidades</a></li>
+                    <li><a href="agendamento.html" class="nav-link active">Agendamento</a></li>
+                    <li><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    <li><a href="localizacao.html" class="nav-link">Localização</a></li>
+                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+                <a href="agendamento.html" class="btn btn-gold nav-btn">
+                    <i class="fas fa-calendar-check"></i> Agendar
+                </a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Agendamento</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Agende sua <span class="gold-text">Consulta</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Escolha o melhor dia e horário para você. Atendimento de qualidade, com hora marcada.</p>
+        </div>
+    </section>
+
+    <!-- Agendamento Section -->
+    <section class="section agendamento-page">
+        <div class="container">
+            <div class="agendamento-grid">
+
+                <!-- Formulário -->
+                <div class="agendamento-form-wrapper" data-aos="fade-right">
+                    <div class="form-header">
+                        <i class="fas fa-calendar-check"></i>
+                        <h2>Sistema de Agendamento</h2>
+                        <p>Preencha o formulário abaixo para agendar sua consulta</p>
+                    </div>
+
+                    <form id="agendamentoForm" class="agendamento-form" novalidate>
+                        <!-- Etapa 1: Dados Pessoais -->
+                        <div class="form-step active" data-step="1">
+                            <h3 class="step-title"><span class="step-number">1</span> Seus Dados</h3>
+
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" minlength="3" maxlength="100">
+                                </div>
+                                <span class="error-message" id="nomeError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone">Telefone / WhatsApp *</label>
+                                <div class="input-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <input type="tel" id="telefone" name="telefone" required placeholder="(71) 90000-0000" maxlength="15">
+                                </div>
+                                <span class="error-message" id="telefoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" required placeholder="seu@email.com" maxlength="100">
+                                </div>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="procedimento">Procedimento Desejado *</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-tooth"></i>
+                                    <select id="procedimento" name="procedimento" required>
+                                        <option value="">Selecione o procedimento</option>
+                                        <option value="Avaliação Inicial">Avaliação Inicial</option>
+                                        <option value="Clínica Geral">Clínica Geral</option>
+                                        <option value="Limpeza / Profilaxia">Limpeza / Profilaxia</option>
+                                        <option value="Clareamento Dental">Clareamento Dental</option>
+                                        <option value="Implantes">Implantes</option>
+                                        <option value="Prótese">Prótese</option>
+                                        <option value="Ortodontia">Ortodontia</option>
+                                        <option value="Facetas">Facetas</option>
+                                        <option value="Canal">Tratamento de Canal</option>
+                                        <option value="Extração">Extração</option>
+                                        <option value="Harmonização Facial">Harmonização Facial</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+                                <span class="error-message" id="procedimentoError"></span>
+                            </div>
+
+                            <button type="button" class="btn btn-gold btn-block next-step">
+                                Próximo <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Etapa 2: Data e Horário -->
+                        <div class="form-step" data-step="2">
+                            <h3 class="step-title"><span class="step-number">2</span> Escolha Data e Horário</h3>
+
+                            <div class="form-group">
+                                <label>Selecione o Dia *</label>
+                                <div class="calendar-wrapper">
+                                    <div class="calendar-header">
+                                        <button type="button" class="calendar-nav" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                                        <h4 id="calendarTitle">Janeiro 2026</h4>
+                                        <button type="button" class="calendar-nav" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                                    </div>
+                                    <div class="calendar-weekdays">
+                                        <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+                                    </div>
+                                    <div class="calendar-days" id="calendarDays"></div>
+                                </div>
+                                <span class="error-message" id="dataError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Selecione o Horário *</label>
+                                <p class="schedule-info">
+                                    <i class="fas fa-info-circle"></i>
+                                    Consultas agendadas de <strong>40 em 40 minutos</strong>
+                                </p>
+                                <div class="horarios-grid" id="horariosGrid">
+                                    <!-- Preenchido dinamicamente -->
+                                </div>
+                                <span class="error-message" id="horarioError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem Adicional (opcional)</label>
+                                <div class="input-icon textarea-icon">
+                                    <i class="fas fa-comment"></i>
+                                    <textarea id="mensagem" name="mensagem" rows="3" placeholder="Alguma informação adicional que deseja compartilhar?" maxlength="500"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-outline prev-step">
+                                    <i class="fas fa-arrow-left"></i> Voltar
+                                </button>
+                                <button type="button" class="btn btn-gold next-step">
+                                    Próximo <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Etapa 3: Confirmação -->
+                        <div class="form-step" data-step="3">
+                            <h3 class="step-title"><span class="step-number">3</span> Confirme seu Agendamento</h3>
+
+                            <div class="resumo-agendamento" id="resumoAgendamento">
+                                <!-- Preenchido dinamicamente -->
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="aceite" required>
+                                    <span class="checkmark"></span>
+                                    Concordo com a <a href="#" target="_blank">Política de Privacidade</a> e autorizo o envio da confirmação via WhatsApp.
+                                </label>
+                            </div>
+
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-outline prev-step">
+                                    <i class="fas fa-arrow-left"></i> Voltar
+                                </button>
+                                <button type="submit" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Confirmar Agendamento
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Informações Laterais -->
+                <aside class="agendamento-sidebar" data-aos="fade-left">
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-clock"></i> Horário de Atendimento</h3>
+                        <ul class="horario-list">
+                            <li>
+                                <span class="dia">Segunda à Sexta</span>
+                                <span class="hora">08:30 às 18:30</span>
+                            </li>
+                            <li>
+                                <span class="dia">Sábado</span>
+                                <span class="hora">08:30 às 14:00</span>
+                            </li>
+                            <li class="fechado">
+                                <span class="dia">Domingo</span>
+                                <span class="hora">Fechado</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-info-circle"></i> Informações</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fas fa-stopwatch"></i>
+                                <div>
+                                    <strong>Duração</strong>
+                                    <p>Cada consulta tem 40 minutos, garantindo um atendimento completo e personalizado.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-bell"></i>
+                                <div>
+                                    <strong>Confirmação</strong>
+                                    <p>Você receberá a confirmação do agendamento via WhatsApp.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-times"></i>
+                                <div>
+                                    <strong>Cancelamento</strong>
+                                    <p>Em caso de desistência, avisar com 24h de antecedência.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card destaque">
+                        <h3><i class="fas fa-gift"></i> Primeira Consulta</h3>
+                        <p>Avaliação inicial <strong>gratuita</strong>! Venha conhecer nossa estrutura.</p>
+                    </div>
+
+                    <a href="https://wa.me/557192735493?text=Olá! Tenho dúvidas sobre agendamento." target="_blank" class="btn btn-whatsapp btn-block">
+                        <i class="fab fa-whatsapp"></i>
+                        Dúvidas? Fale Conosco
+                    </a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-tooth"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-name">3R <span class="gold-text">Saúde Integrada</span></span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Clínica odontológica premium em Salvador, dedicada a oferecer o melhor em saúde bucal.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="especialidades.html">Especialidades</a></li>
+                        <li><a href="agendamento.html">Agendamento</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Especialidades</h4>
+                    <ul>
+                        <li><a href="especialidades.html">Clínica Geral</a></li>
+                        <li><a href="especialidades.html">Implantes</a></li>
+                        <li><a href="especialidades.html">Ortodontia</a></li>
+                        <li><a href="especialidades.html">Clareamento</a></li>
+                        <li><a href="especialidades.html">Facetas</a></li>
+                        <li><a href="especialidades.html">Harmonização</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i><span>Rua Micronésia, nº 1<br>São Marcos, Salvador - BA<br>CEP: 41250-160</span></li>
+                        <li><i class="fas fa-phone"></i><span>(71) 9273-5493</span></li>
+                        <li><i class="fas fa-envelope"></i><span>contato@3rsaudeintegrada.com.br</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 3R Saúde Integrada. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">LGPD</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/557192735493?text=Olá! Gostaria de agendar uma consulta." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-pulse"></span>
+    </a>
+    <button class="back-to-top" id="backToTop" aria-label="Topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/agendamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="3R Saúde Integrada">
+  <rect width="64" height="64" rx="14" fill="#0B2D5C"/>
+  <path d="M20 17c-4 0-7 3-7 8 0 10 7 20 11 24 2 3 5 3 8 0 4-4 11-14 11-24 0-5-3-8-7-8-3 0-5 2-6 5-1-3-4-5-10-5Z" fill="#D4AF37"/>
+  <text x="32" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0B2D5C">3R</text>
+</svg>
