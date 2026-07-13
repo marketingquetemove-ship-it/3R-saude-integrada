@@ -1,0 +1,41 @@
+import fs from "fs";
+import path from "path";
+
+const github = await import("/tmp/creao-connectors/github.ts");
+
+const baseDir = "/home/user/workspaces/789dbb46-3a5e-40d8-a3d6-04c54fa764bb/files";
+const repoFullname = "marketingquetemove-ship-it/3R-saude-integrada";
+
+function walk(dir, base = "") {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  let files = [];
+  for (const e of entries) {
+    const full = path.join(dir, e.name);
+    const rel = base ? `${base}/${e.name}` : e.name;
+    if (e.isDirectory()) {
+      files = files.concat(walk(full, rel));
+    } else {
+      files.push({ full, rel });
+    }
+  }
+  return files;
+}
+
+const files = walk(baseDir).filter(f => f.full.endsWith(".html") || f.full.endsWith(".css") || f.full.endsWith(".js") || f.full.endsWith(".json") || f.full.endsWith(".txt") || f.full.endsWith(".xml") || f.rel === "CNAME" || f.rel === ".htaccess");
+
+console.log("Files to upload:", files.map(f => f.rel));
+
+for (const f of files) {
+  const content = fs.readFileSync(f.full, "utf8");
+  try {
+    const res = await github.createOrUpdateFileContents({
+      repoFullname,
+      path: f.rel,
+      fileContent: content,
+      commitMessage: `Deploy: update ${f.rel}`,
+    });
+    console.log("OK:", f.rel);
+  } catch (err) {
+    console.error("FAIL:", f.rel, err.message || err);
+  }
+}
